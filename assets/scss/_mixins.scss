@@ -1,0 +1,76 @@
+/* Colors */
+$body-color: #37393c;
+$body-bg-color: #fafbfc;
+$heading-color: #2d3238;
+$border-color: #f0f0f7;
+$pink: #ff509c;
+$green: #28c68d;
+// Grey
+$light-grey: #fdfdfd;
+$grey: #fcfcfc;
+$dark-grey: #929292;
+// Blue
+$blue: #3d75ee;
+$dark-blue: #2b5cc7;
+
+.color-border{
+	border-color: $light-grey !important;
+}
+
+.fa-check-circle {
+	color: $green;
+}
+.fa-times-circle {
+	color: $pink;
+}
+
+
+/* Backgrounds */
+.bg-white{
+	background-color: #fff !important;
+}
+.bg-green{
+	background-color: $green !important;
+}
+.bg-grey{
+	background-color: $grey !important;
+}
+.white-shadow{
+	background-color: white;
+    box-shadow: 0px 3px 20px 2px rgba(212, 211, 211, 0.55);
+    border-radius: 10px;
+}
+
+
+$easing-cubic-bezier-speed: 200ms;
+$easing-cubic-bezier: cubic-bezier(0.7, 0, 0, 0.7);
+
+@mixin font-muli {
+	font-family: 'Muli',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+@mixin font-poppins {
+	font-family: 'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}	
+@mixin light-to-darkgreen-gradient-135deg {
+	background-image: linear-gradient(135deg, #013453, #00273f);
+}	
+@mixin darkgreen-to-grey-gradient {
+	background-image: linear-gradient(to right, #314b5c, #364f5f);
+}
+@mixin darkgreen-to-grey-lighter-gradient {
+	background-image: linear-gradient(to right, #364f5f, #4a5d6a);
+}
+@mixin purple-diagonal-gradient {
+	background-image: linear-gradient(left top, right bottom, #5031a9, #5031a9);
+}
+@mixin white-shadow{
+	background-color: white;
+    box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 0.55);
+}
+@mixin addClearfix {
+	&:after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}

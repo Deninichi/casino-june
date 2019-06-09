@@ -1,0 +1,54 @@
+.container{
+	max-width: 1470px;
+}
+
+
+/* animated hamburger */
+.navbar-animated .navbar-toggle {
+    border-color: #ddd;
+}
+.navbar-animated .navbar-toggler .icon-bar {
+	background-color: #fff;
+}
+.navbar-toggler .icon-bar {
+    -webkit-transition: opacity, -webkit-transform;
+    transition: opacity, -webkit-transform;
+    transition: opacity, transform;
+    transition: opacity, transform, -webkit-transform;
+    -webkit-transition-duration: 200ms;
+    transition-duration: 200ms;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+    transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+}
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 1px;
+}
+.navbar-toggler .icon-bar+.icon-bar {
+    margin-top: 6px;
+}
+.navbar-toggler {
+	overflow: hidden;
+
+	.icon-bar {
+		transition: opacity, transform;
+		transition-duration: $easing-cubic-bezier-speed;
+		transition-timing-function: $easing-cubic-bezier;
+    }
+	&.opened {
+		.icon-bar {
+			&:nth-child(1) {
+				transform: translateY(8px) rotate(45deg);
+			}
+			&:nth-child(2) {
+				opacity: 0;
+				transform: translateX(-100%);
+			}
+			&:nth-child(3) {
+				transform: translateY(-8px) rotate(-45deg);
+			}
+		}
+	}
+}

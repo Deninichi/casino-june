@@ -1,0 +1,178 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-01-29 16:17+0100\n"
+"PO-Revision-Date: 2019-01-31 13:49+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+
+#: functions.php:51
+msgid "Primary sidebar"
+msgstr ""
+
+#: functions.php:53
+msgid "Add widgets here."
+msgstr ""
+
+#: template-parts/author-block-part.php:34
+msgid "Totalt:"
+msgstr "Total:"
+
+#: template-parts/author-block-part.php:34
+msgid "röster."
+msgstr ""
+
+#: template-parts/author-block-part.php:34
+msgid "Betyg:"
+msgstr ""
+
+#: template-parts/author-block-part.php:37
+msgid "FÖRFATTARE"
+msgstr ""
+
+#: template-parts/contacts-section-part.php:20
+msgid "Hemsida:"
+msgstr ""
+
+#: template-parts/contacts-section-part.php:26
+msgid "Lanserades:"
+msgstr ""
+
+#: template-parts/contacts-section-part.php:32
+msgid "E-post:"
+msgstr ""
+
+#: template-parts/contacts-section-part.php:38
+msgid "Företagsinformation:"
+msgstr ""
+
+#: template-parts/contacts-section-part.php:44
+msgid "Företagsnamn:"
+msgstr ""
+
+#: template-parts/contacts-section-part.php:50
+msgid "Orgnr"
+msgstr ""
+
+#: template-parts/contacts-section-part.php:63
+msgid "Gata:"
+msgstr ""
+
+#: template-parts/contacts-section-part.php:69
+msgid "Stad:"
+msgstr ""
+
+#: template-parts/contacts-section-part.php:75
+msgid "Utbetalning:"
+msgstr ""
+
+#: template-parts/contacts-section-part.php:81
+msgid "Kreditupplysning"
+msgstr ""
+
+#: template-parts/contacts-section-part.php:87
+msgid "Telefonnummer:"
+msgstr ""
+
+#: template-parts/contacts-section-part.php:93
+msgid "Sociala medier:"
+msgstr ""
+
+#: template-parts/countries-section.php:30
+msgid "Freedom Finance"
+msgstr ""
+
+#: template-parts/countries-section.php:31
+msgid "Lendo"
+msgstr ""
+
+#: template-parts/countries-section.php:32
+msgid "Zmarta"
+msgstr ""
+
+#: template-parts/gallery-section-part.php:21
+msgid "Full Size"
+msgstr ""
+
+#: template-parts/posts/content-lender.php:34
+#: template-parts/posts/loop-2-lender.php:28
+#: template-parts/posts/loop-lender.php:25
+msgid "Lägstabelopp"
+msgstr ""
+
+#: template-parts/posts/content-lender.php:40
+#: template-parts/posts/loop-2-lender.php:32
+#: template-parts/posts/loop-lender.php:29
+msgid "Högstabelopp"
+msgstr ""
+
+#: template-parts/posts/content-lender.php:46
+#: template-parts/posts/loop-2-lender.php:60
+#: template-parts/posts/loop-lender.php:57
+msgid "Åldersgräns"
+msgstr ""
+
+#: template-parts/posts/content-lender.php:52
+#: template-parts/posts/loop-2-lender.php:40
+#: template-parts/posts/loop-lender.php:37
+msgid "Avgift"
+msgstr ""
+
+#: template-parts/posts/content-lender.php:58
+#: template-parts/posts/loop-2-lender.php:44
+#: template-parts/posts/loop-lender.php:41
+msgid "Ränta"
+msgstr ""
+
+#: template-parts/posts/content-lender.php:67
+#: template-parts/posts/loop-lender.php:79
+msgid "valde"
+msgstr ""
+
+#: template-parts/posts/loop-2-lender.php:36
+#: template-parts/posts/loop-lender.php:33
+msgid "Löptid"
+msgstr ""
+
+#: template-parts/tags-section-part.php:15
+msgid "Tags: "
+msgstr ""
+
+#: template-parts/work-days-section-part.php:26
+msgid "Måndag"
+msgstr ""
+
+#: template-parts/work-days-section-part.php:30
+msgid "Tisdag"
+msgstr ""
+
+#: template-parts/work-days-section-part.php:34
+msgid "Onsdag"
+msgstr ""
+
+#: template-parts/work-days-section-part.php:38
+msgid "Torsdag"
+msgstr ""
+
+#: template-parts/work-days-section-part.php:42
+msgid "Fredag"
+msgstr ""
+
+#: template-parts/work-days-section-part.php:50
+msgid "Lördag"
+msgstr ""
+
+#: template-parts/work-days-section-part.php:54
+msgid "Söndag"
+msgstr ""
