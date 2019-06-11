@@ -5,11 +5,7 @@
 
 }
 
-@media (min-width: 768px) {
-	.collapse-section{
-		padding: 3.3rem 2.6rem;
-	}
-
+@media (min-width: 992px) {
 	.general-info {
 		.free-spins, .bonus {
 			max-width: 15.666667%;
@@ -19,6 +15,12 @@
 			flex: 0 0 27%;
 			max-width: 27%;
 		}
+	}
+}
+
+@media (min-width: 768px) {
+	.collapse-section{
+		padding: 3.3rem 2.6rem;
 	}
 }
 
@@ -70,6 +72,15 @@
 	}
 }
 
+@media (max-width: 992px) {
+	.general-info .actions {
+		padding: 1em 2em;
+
+		 .btn-link {
+			width: 50%;
+		}
+	}
+}
 
 @media (max-width: 768px) {
 
@@ -331,6 +342,13 @@
 }
 
 @media (max-width: 480px){
+
+	body {
+	
+		&::before {
+			top: 90px;
+		}
+	}
 
 	h1{
 		font-size: 1.5rem;

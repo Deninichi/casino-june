@@ -14,29 +14,22 @@ get_header(); ?>
 
 
 <div class="">
-	
-	<div class="row breadcrumbs">
-		<?php the_breadcrumbs(); ?>
-	</div>
-
-	<div class="title-block text-center d-flex justify-content-center align-items-center mb-3">
-		<?php bear_the_title(); ?>
-	</div>
-
-	<div class="post-modify-date mb-4 text-center">
-		<span class="text-wrapper">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bag-white.png" alt="">
-			<?php bear_the_post_date(); ?>
-		</span>
-	</div>
-
-	<div class="description has-read-more text-center">
-		<?php bear_the_description() ?>
-	</div>
 
 	<div class="main-content wrap row justify-content-center">
 		<div id="primary" class="col-12 col-lg-12 col-xl-9">
 			<main id="main" class="content" role="main">
+
+				<div class="breadcrumbs mb-3">
+					<?php the_breadcrumbs( '>' ); ?>
+				</div>
+
+				<div class="title-block mb-2">
+					<?php bear_the_title(); ?>
+				</div>
+
+				<div class="description has-read-more mt-4 mb-5">
+					<?php bear_the_description() ?>
+				</div>
 
 				<?php
 				if ( have_posts() ) :

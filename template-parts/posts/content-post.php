@@ -47,7 +47,7 @@
               <td><span><?php the_field( 'post_mobile_casino' ); ?></span></td>
             </tr>
             <tr>
-              <td><img src="<?php echo get_template_directory_uri(); ?>/assets/images/slots.png" alt=""></td>
+              <td><i class="fas fa-file-invoice"></i></td>
               <td>Slots:</td>
               <td><span><?php the_field( 'post_slots' ); ?></span></td>
             </tr>

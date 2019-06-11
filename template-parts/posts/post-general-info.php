@@ -13,29 +13,29 @@
     }
   </style>
 
-  <div class="row align-items-stretch">
-    <div class="logo-wrap col-12 col-sm-4 col-md-2 d-flex align-items-center justify-content-center">
+  <div class="row align-items-stretch pt-md-2 pt-lg-0">
+    <div class="logo-wrap col-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
       <?php if ( has_post_thumbnail() ): ?>
         <div class="logo">
-          <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+          <a href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(); ?>" alt=""></a>
         </div>
       <?php endif ?>
     </div>
 
      <!-- Free Spins -->
-    <div class="free-spins col-6 col-sm-4 col-md-2 align-items-center justify-content-center d-flex flex-column">
+    <div class="free-spins col-6 col-md-4 col-lg-2 align-items-center justify-content-center d-flex flex-column">
       <p><?php the_field( 'post_free_spins' ); ?></p>
       <span>Free Spins</span>
     </div>
 
     <!-- Bonus -->
-    <div class="bonus col-6 col-sm-4 col-md-2 align-items-center justify-content-center d-flex flex-column">
+    <div class="bonus col-6 col-md-4 col-lg-2 align-items-center justify-content-center d-flex flex-column">
       <p><?php echo number_format( get_field( 'post_bonus' ), 0, '.', ' ' ); ?> kr</p>
       <span>Bonus</span>
     </div>
 
     <!-- Checkboxes -->
-    <div class="checkboxes col-12 col-md-3 p-md-0 align-items-center d-flex">
+    <div class="checkboxes col-12 col-lg-3 p-lg-0 align-items-center d-flex">
       
       <?php if ( $checkboxes ): ?>
         <ul class="ul-block align-items-center justify-content-between">
@@ -50,7 +50,7 @@
     </div>
 
     <!-- Button -->
-    <div class="actions col-12 col-md-3 align-items-center d-flex flex-wrap justify-content-between">
+    <div class="actions col-12 col-lg-3 align-items-center d-flex flex-wrap justify-content-between">
       <a class="btn-link text-center mb-2" 
         href="<?php the_field( 'bear_cta_button_url' ) ?>" <?php echo ( is_array( $nofollow_btn ) && '1' === $nofollow_btn[0] ) ? 'rel="nofollow"': ''; ?>>
         <?php the_field( 'bear_cta_button_text' ); ?>

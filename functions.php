@@ -136,7 +136,7 @@ add_action( 'widgets_init', 'bear_widgets_init' );
 function bear_redirects() {
 
   // Redirect from author and category pages to home
-  if ( is_author() || is_category() ) {
+  if ( is_author() ) {
      wp_redirect( home_url() );
      exit();
   }

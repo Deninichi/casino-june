@@ -10,13 +10,13 @@
 	<div class="main-content row justify-content-center">
 		<div id="content" class="content col-12 col-lg-12 col-xl-9">
 			
-		<div class="title-block mb-2">
-			<?php bear_the_title(); ?>
-		</div>
+			<div class="title-block mb-2">
+				<?php bear_the_title(); ?>
+			</div>
 
-		<div class="description has-read-more mt-4 mb-5">
-			<?php bear_the_description() ?>
-		</div>
+			<div class="description has-read-more mt-4 mb-5">
+				<?php bear_the_description() ?>
+			</div>
 
 			<?php
 				global $wp_query;
