@@ -518,7 +518,8 @@ footer {
       display: inline-block;
       color: #fdfdfd; }
       .general-info .actions .stars i {
-        font-weight: 500; }
+        font-weight: 500;
+        color: #ceced0; }
       .general-info .actions .stars::before {
         color: #ff509c;
         content: '\f005\f005\f005\f005\f005';
