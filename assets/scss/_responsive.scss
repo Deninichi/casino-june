@@ -25,7 +25,7 @@
 }
 
 @media (max-width: 1200px) {
-	
+
 	/*=== HEADER ===*/
 	header{
 		padding: 1rem;
@@ -55,6 +55,10 @@
 				    padding: 5px 0;
 				    border-bottom: 1px solid #eee;
 				    width: 100%;
+
+					a {
+						padding: 0 1em;
+					}
 				}
 
 				.top-socials {
@@ -94,12 +98,12 @@
 	}
 
 	header {
-		
+
 		.logo {
 			top: 15px;
 			left: 50%;
     		transform: translateX(-50%);
-			
+
 			img {
 				width: 100px;
 			}
@@ -113,14 +117,14 @@
 	/*=== CONTENT ===*/
 	.main-content{
 		margin-top: 0;
-		padding-top: 2em;
+		padding-top: 0;
 	}
 
 	.pagination {
 	    margin-bottom: 4rem;
 	    margin-top: 3rem;
 	    justify-content: space-between;
-		
+
 		a.prev, a.next {
 			padding: 0.5em;
 		}
@@ -177,10 +181,6 @@
 	}
 
 	/*=== Single Page ===*/
-	.wrap{
-		margin-top: 3rem;
-	}
-
 	.general-info {
 
 		.row {
@@ -253,7 +253,7 @@
 			    padding-left: 1em;
 			}
 		}
-		
+
 	}
 
 	.properties .wrap {
@@ -299,14 +299,14 @@
 }
 
 @media (max-width: 600px){
-	
+
 	/*=== Loop Post ===*/
 	.post-loop {
 
 		.logo{
 			width: 100%;
 		}
-		
+
 		.post-content .post-meta {
 		    display: flex;
 		    flex-wrap: wrap;
@@ -344,7 +344,7 @@
 @media (max-width: 480px){
 
 	body {
-	
+
 		&::before {
 			top: 90px;
 		}
@@ -356,31 +356,36 @@
 
 	/*=== Breadcrumbs ===*/
 	.breadcrumbs {
-	    padding: 1em 0;
+		padding: .75em .5em;
+		margin: -0.5em -1em 0;
+		border-bottom: 1px solid #ddd;
+		vertical-align: bottom;
+		line-height: 1;
 
 	    a {
-			padding: .1em 0.5em;
+			padding: 0;
+			vertical-align: bottom;
 	    }
 	}
 
 	/*=== Loop Post ===*/
 	.post-loop {
 
-		
+
 		.post-content .post-meta {
 			// justify-content: space-between;
     		padding: 1.75em !important;
-		 	
+
 		 	.stars {
 				margin: auto !important;
 			    text-align: center;
-			}  
+			}
 
 			.btn-link {
     			width: 100%;
     			flex-basis: 100%;
     		    margin: 1em 0 0;
-			} 
+			}
 
 			.author {
 
@@ -389,7 +394,7 @@
 	}
 
 	/*=== Single Page ===*/
-	.general-info {	
+	.general-info {
 
 		.logo-wrap {
 			height: auto;
@@ -408,7 +413,7 @@
 				}
 			}
 		}
-		
+
 
 		.actions {
 			flex-direction: column;
@@ -433,7 +438,7 @@
     			width: 100%;
 			}
 		}
-		
+
 	}
 
 	.properties .wrap {
@@ -487,7 +492,7 @@
 				}
 			}
 		}
-		
+
 		.logos {
 			li {
 				&:nth-child(4) {

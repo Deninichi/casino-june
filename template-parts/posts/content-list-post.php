@@ -1,14 +1,18 @@
 <?php
 
   $checkboxes   = get_field( 'post_checkboxes' );
-  $rating = 100 / 5 * get_field( 'post_rating' );
+
+  $rating = 0;
+  if( is_numeric(get_field( 'post_rating' ) ) ) {
+    $rating = 100 / 5 * get_field( 'post_rating' );
+  }
 
   $cta_nofollow = get_field( 'bear_cta_button_nofollow' );
   $tc_nofollow = get_field( 'post_tc_applies_nofollow' );
-?>  
+?>
 
 <article <?php post_class( 'post list'); ?>>
-  
+
   <?php
 
     global $wp_query;
@@ -39,13 +43,6 @@
         get_template_part( 'template-parts/posts/post-general-info', get_post_type() );
 
       endwhile;
-
-      // Load More button
-      if ( $wp_query->post_count > 6 ) : ?>
-        <div class="btn-wrapper text-center">
-          <a class="btn-lg border-radius-small load-more" href="#"><span class="icon-wrapper icon-left"><i class="fas fa-sync"></i></span></a>
-        </div>
-      <?php endif;
 
       wp_reset_query();
 

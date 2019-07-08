@@ -1,3 +1,13 @@
+<?php 
+  $companies = get_field( 'post_companies' );
+  if( $companies && is_array($companies) ){
+    $companies_number = count( $companies );
+  } else {
+    $companies_number = 0;
+  }
+  $companies_per_table = (int)ceil($companies_number / 2);
+?>
+
 <article <?php post_class( 'post single'); ?>>
 
   <?php get_template_part( 'template-parts/posts/post-general-info' ); ?>
@@ -7,50 +17,23 @@
       <div class="row">
         <div class="col-12 col-md-6 mb-3 mb-md-0">
           <table>
-            <tr>
-              <td><i class="fas fa-business-time"></i></td>
-              <td>Payment time:</td>
-              <td><span><?php the_field( 'post_payment_time' ); ?></span></td>
-            </tr>
-            <tr>
-              <td><i class="fas fa-coins"></i></td>
-              <td>Limit:</td>
-              <td><span><?php the_field( 'post_withdrawal_limit' ); ?></span></td>
-            </tr>
-            <tr>
-              <td><i class="fas fa-money-bill-wave"></td>
-              <td>Min deposit:</td>
-              <td><span><?php the_field( 'post_minimum_deposit' ); ?></span></td>
-            </tr>
-            <tr>
-              <td><i class="fas fa-rocket"></i></td>
-              <td>Launched:</td>
-              <td><span><?php the_field( 'post_launched' ); ?></span></td>
-            </tr>
-          </table>
-        </div>
-        <div class="col-12 col-md-6">
-          <table>
-            <tr>
-              <td><i class="fas fa-award"></i></td>
-              <td>License</td>
-              <td><span><?php the_field( 'post_license' ); ?></span></td>
-            </tr>
-            <tr>
-              <td><i class="fas fa-user-check"></i></td>
-              <td>Live dealer:</td>
-              <td><span><?php the_field( 'post_live_dealer' ); ?></span></td>
-            </tr>
-            <tr>
-              <td><i class="fas fa-mobile-alt"></i></td>
-              <td>Mobile casino:</td>
-              <td><span><?php the_field( 'post_mobile_casino' ); ?></span></td>
-            </tr>
-            <tr>
-              <td><i class="fas fa-file-invoice"></i></td>
-              <td>Slots:</td>
-              <td><span><?php the_field( 'post_slots' ); ?></span></td>
-            </tr>
+            <?php if( $companies_number && $companies_number !== 0 ): ?>
+              <?php foreach( $companies as $key => $company ) : ?>
+                
+                <?php if( $key === $companies_per_table ): ?>
+                  </table>
+                  </div>
+                  <div class="col-12 col-md-6 mb-3 mb-md-0">
+                  <table>
+                <?php endif; ?>
+
+                <tr>
+                  <td><img src="<?php echo $company['company_logo']; ?>" alt=""></td>
+                  <td><?php echo $company['company_name']; ?></td>
+                  <td><span><?php echo $company['text']; ?></span></td>
+                </tr>
+              <?php endforeach; ?>
+            <?php endif; ?>
           </table>
         </div>
       </div>

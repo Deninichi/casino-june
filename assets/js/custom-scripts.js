@@ -1,11 +1,11 @@
 (function($) {
-  
+
 	$(document).ready(function(){
 
 		//animate hamburger icon
 		$('header .navbar-toggler').click(function() {
 			$(this).toggleClass('opened');
-		});	
+		});
 
 		// read more feature
 		var paragraphs = $('.description.has-read-more > *');
@@ -35,31 +35,6 @@
 		    }, 500);
 
 		});
-
-
-		// Load more
-		$('.post.list section').each(function(index, el) {
-			if ( index > 5 ) {
-				$(this).hide();
-			};
-		});
-
-		$('.post.list .load-more').click(function(event) {
-			event.preventDefault();
-
-			let container = $(this).closest('.post.list ');
-			container.find('section:hidden:lt(5)').show();
-
-			if ( container.find('section:hidden').length == 0 ) {
-				$(this).hide();
-			};
-
-		});
-
-
-		// Comments Form
-		
-
 	});
 
 

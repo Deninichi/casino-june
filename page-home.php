@@ -9,7 +9,7 @@
 <div class="homepage">
 	<div class="main-content row justify-content-center">
 		<div id="content" class="content col-12 col-lg-12 col-xl-9">
-			
+
 			<div class="title-block mb-2">
 				<?php bear_the_title(); ?>
 			</div>
@@ -25,7 +25,7 @@
 				$paged = ( get_query_var( 'page' ) ) ? get_query_var( 'page' ) : 1;
 				$posts_args = array(
 					'post_type' 	 => 'post',
-					'posts_per_page' => 8,
+					'posts_per_page' => -1,
 					'paged'          => $paged
 				);
 				$wp_query = new WP_Query( $posts_args );
@@ -44,16 +44,6 @@
 						get_template_part( 'template-parts/posts/post-general-info' );
 
 					endwhile;
-
-					if ( function_exists('the_pagination_links') && has_pagination() ): ?>
-						<div class="pagination white-shadow p-3">
-							<?php  the_previous_page_url(); ?>
-							<ul>
-								<?php the_pagination_links(); ?>
-							</ul>
-							<?php the_next_page_url(); ?>
-						</div>
-					<?php endif;
 
 					wp_reset_query();
 
